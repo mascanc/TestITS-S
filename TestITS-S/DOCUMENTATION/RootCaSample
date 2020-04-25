@@ -1,0 +1,20 @@
+EtsiTs103097Certificate [
+  version=3
+  type=explicit
+  issuer=[self=sha256]
+  toBeSigned=[
+    id=[name=[testrootca.autostrade.it]]
+    cracaId=[000000]
+    crlSeries=[0]
+    validityPeriod=[start=Time32 [timeStamp=Fri Apr 17 12:16:22 CEST 2020 (514203385)], duration=Duration [45 years]]
+    region=[SequenceOfIdentifiedRegion [[CountryOnly [380]]]]
+    assuranceLevel=NONE
+    appPermissions=[[psid=[622(26e)], ssp=[opaque=[01]]],[psid=[624(270)], ssp=[opaque=[0138]]]]
+    certIssuePermissions=[[subjectPermissions=[all], minChainDepth=3, chainDepthRange=-1, eeType=[app=true, enroll=true]]]
+    certRequestPermissions=NONE
+    canRequestRollover=false
+    encryptionKey=[supportedSymmAlg=aes128Ccm, publicKey=[ecdsaNistP256=[compressedy0=f4f92d6775cfbce15a83b5106504def901a3f2b1fddc000006e834acc9d4df57]]]
+    verifyKeyIndicator=[verificationKey=[ecdsaNistP256=[compressedy0=32b55d588bb1e5f8de40a37b96d85902b8116e5c7dd2fbcd6fdbf12902a5f7e4]]]
+  ]
+  signature=[ecdsaNistP256Signature=EcdsaP256[r=[xonly=77b176efe24e46bffff8716e1a80217daf2794b35ad3e6cea880e5bd62b6083a], s=c4548665df47df881ea7769ef72bbd0bf8216930eb01d7db60861044df6cc434]]
+]

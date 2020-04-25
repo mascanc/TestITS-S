@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/c2c-common"/>
+	<classpathentry kind="lib" path="lib/bcprov-debug-jdk15on-165.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
