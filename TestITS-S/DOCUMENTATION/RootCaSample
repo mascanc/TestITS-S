@@ -1,20 +1,175 @@
-EtsiTs103097Certificate [
+Created Root CA
+Created Enrolment CA
+Created Authorization CA
+Enrolment CA: reading certificate EtsiTs103097Certificate [
   version=3
   type=explicit
-  issuer=[self=sha256]
+  issuer=[sha256AndDigest=[aeebdac2d93ffe62]]
   toBeSigned=[
-    id=[name=[testrootca.autostrade.it]]
+    id=[name=[testea.autostrade.it]]
     cracaId=[000000]
     crlSeries=[0]
-    validityPeriod=[start=Time32 [timeStamp=Fri Apr 17 12:16:22 CEST 2020 (514203385)], duration=Duration [45 years]]
+    validityPeriod=[start=Time32 [timeStamp=Sat Apr 25 15:54:28 CEST 2020 (514907671)], duration=Duration [37 years]]
     region=[SequenceOfIdentifiedRegion [[CountryOnly [380]]]]
-    assuranceLevel=NONE
-    appPermissions=[[psid=[622(26e)], ssp=[opaque=[01]]],[psid=[624(270)], ssp=[opaque=[0138]]]]
-    certIssuePermissions=[[subjectPermissions=[all], minChainDepth=3, chainDepthRange=-1, eeType=[app=true, enroll=true]]]
+    assuranceLevel=[subjectAssurance=35 (assuranceLevel=1, confidenceLevel= 3 )]
+    appPermissions=[[psid=[623(26f)], ssp=[opaque=[010e]]]]
+    certIssuePermissions=[[subjectPermissions=[all], minChainDepth=1, chainDepthRange=0, eeType=[app=false, enroll=true]]]
     certRequestPermissions=NONE
     canRequestRollover=false
-    encryptionKey=[supportedSymmAlg=aes128Ccm, publicKey=[ecdsaNistP256=[compressedy0=f4f92d6775cfbce15a83b5106504def901a3f2b1fddc000006e834acc9d4df57]]]
-    verifyKeyIndicator=[verificationKey=[ecdsaNistP256=[compressedy0=32b55d588bb1e5f8de40a37b96d85902b8116e5c7dd2fbcd6fdbf12902a5f7e4]]]
+    encryptionKey=[supportedSymmAlg=aes128Ccm, publicKey=[ecdsaNistP256=[compressedy0=4c1c3b28ff5bfc1804c17ac2231a6305d0903292e5c53beb30814e14c6e4729e]]]
+    verifyKeyIndicator=[verificationKey=[ecdsaNistP256=[compressedy1=1cc00e731a50ccbfadd4408723e451fb0720cb0b48f5938280af98a29d2c472a]]]
   ]
-  signature=[ecdsaNistP256Signature=EcdsaP256[r=[xonly=77b176efe24e46bffff8716e1a80217daf2794b35ad3e6cea880e5bd62b6083a], s=c4548665df47df881ea7769ef72bbd0bf8216930eb01d7db60861044df6cc434]]
+  signature=[ecdsaNistP256Signature=EcdsaP256[r=[xonly=a5b94568472fa4f168cb9f0071411a858bffcdd8296ddc8fabed8b58ec5f92b8], s=402b6c8304066ea243f4ffadf09deb42b58d3d63c030015fc67a18afa98b22d1]]
 ]
+Enrolment CA: reading keys java.security.KeyPair@636be97c
+Authorization CA: obtained cert EtsiTs103097Certificate [
+  version=3
+  type=explicit
+  issuer=[sha256AndDigest=[aeebdac2d93ffe62]]
+  toBeSigned=[
+    id=[name=[testaa.autostrade.it]]
+    cracaId=[000000]
+    crlSeries=[0]
+    validityPeriod=[start=Time32 [timeStamp=Sat Apr 25 15:54:28 CEST 2020 (514907671)], duration=Duration [15 years]]
+    region=[SequenceOfIdentifiedRegion [[CountryOnly [380]]]]
+    assuranceLevel=[subjectAssurance=35 (assuranceLevel=1, confidenceLevel= 3 )]
+    appPermissions=[[psid=[623(26f)], ssp=[opaque=[0132]]]]
+    certIssuePermissions=[[subjectPermissions=[all], minChainDepth=1, chainDepthRange=0, eeType=[app=true, enroll=false]]]
+    certRequestPermissions=NONE
+    canRequestRollover=false
+    encryptionKey=[supportedSymmAlg=aes128Ccm, publicKey=[ecdsaNistP256=[compressedy0=8b84c25442534d50167bef0571c1db78adf488569f91a65604f53c5c5060d4f6]]]
+    verifyKeyIndicator=[verificationKey=[ecdsaNistP256=[compressedy0=5ac8ad06407c3973ce167d053985180682acb8d51c00d3d46e214ddd0c300495]]]
+  ]
+  signature=[ecdsaNistP256Signature=EcdsaP256[r=[xonly=3c69eec5962b52890a09173c26ad0493104c148b61be5abd83b6ae455e78e961], s=0f83d6bd162bb5b049bad8d961a906f684b99358cf88a11d5fa9fac40184055a]]
+]
+Received initializion data for ITS-S eb3834f5-3c02-43dc-b7f8-8afcac95a28e
+Generato un messaggio di richeista di enrolment per enrolCa. Io sono eb3834f5-3c02-43dc-b7f8-8afcac95a28e e la richiesta è InnerEcRequest [
+  itsId=65623338333466352d336330322d343364632d623766382d386166636163393561323865
+  certificateFormat=COERInteger [value=1]
+  publicKeys=[verificationKey=[ecdsaNistP256=[compressedy1=4fce8e7926fca63cf8307feea0440f662b4e8d7407176a92bbede1b5edb8126a]],encryptionKey=[supportedSymmAlg=aes128Ccm, publicKey=[ecdsaNistP256=[compressedy0=d2f26639a92e7132e212ce8a263608db026fa6db104c9425f747856c7b5cc291]]]]
+  requestedSubjectAttributes=[
+    id=[name=[localhost]]
+    validityPeriod=[start=Time32 [timeStamp=Sun Dec 02 12:12:21 CET 2018 (470833944)], duration=Duration [5 years]]
+    region=[SequenceOfIdentifiedRegion [[CountryOnly [380]]]]
+    assuranceLevel=[subjectAssurance=35 (assuranceLevel=1, confidenceLevel= 3 )]
+    appPermissions=[[psid=[623(26f)], ssp=[opaque=[0132]]]]
+    certIssuePermissions=NONE
+  ]
+]
+Received a enrolment request message from: SignerIdentifier [self]
+Header info HeaderInfo [
+  psid=[623(26f)],
+  generationTime=[timeStamp=Sat Apr 25 15:54:28 CEST 2020 (514907671547000)]
+]
+The inner message InnerEcRequest [
+  itsId=65623338333466352d336330322d343364632d623766382d386166636163393561323865
+  certificateFormat=COERInteger [value=1]
+  publicKeys=[verificationKey=[ecdsaNistP256=[compressedy1=4fce8e7926fca63cf8307feea0440f662b4e8d7407176a92bbede1b5edb8126a]],encryptionKey=[supportedSymmAlg=aes128Ccm, publicKey=[ecdsaNistP256=[compressedy0=d2f26639a92e7132e212ce8a263608db026fa6db104c9425f747856c7b5cc291]]]]
+  requestedSubjectAttributes=[
+    id=[name=[localhost]]
+    validityPeriod=[start=Time32 [timeStamp=Sun Dec 02 12:12:21 CET 2018 (470833944)], duration=Duration [5 years]]
+    region=[SequenceOfIdentifiedRegion [[CountryOnly [380]]]]
+    assuranceLevel=[subjectAssurance=35 (assuranceLevel=1, confidenceLevel= 3 )]
+    appPermissions=[[psid=[623(26f)], ssp=[opaque=[0132]]]]
+    certIssuePermissions=NONE
+  ]
+]
+The ITS id received is eb3834f5-3c02-43dc-b7f8-8afcac95a28e
+The S-ITS-S is known, generating its certificate
+Got a inner response for my enrolment request. How do I check the replay? With the hash! 
+All is good I'm enrolled! 
+Got an authorization request from CertificateId [name=[eb3834f5-3c02-43dc-b7f8-8afcac95a28e.autostrade.it]]
+Finally I have an authorization Ticket!!! VerifyResult [
+  signAlg=ecdsaNistP256Signature,
+  signerIdentifier=SignerIdentifier [digest=d64f55b067752c62],
+  headerInfo=HeaderInfo [
+    psid=[623(26f)],
+    generationTime=[timeStamp=Sat Apr 25 15:54:28 CEST 2020 (514907671756000)]
+  ],
+  value=InnerAtResponse [
+    requestHash=8b107576285ca4b1f3d4bf0d5ada6d0f
+    responseCode=ok
+    certificate=[
+      version=3
+      type=explicit
+      issuer=[sha256AndDigest=[d64f55b067752c62]]
+      toBeSigned=[
+        id=[none]
+        cracaId=[000000]
+        crlSeries=[0]
+        validityPeriod=[start=Time32 [timeStamp=Sun Dec 02 12:12:21 CET 2018 (470833944)], duration=Duration [1 years]]
+        region=[SequenceOfIdentifiedRegion [[CountryOnly [380]]]]
+        assuranceLevel=[subjectAssurance=65 (assuranceLevel=2, confidenceLevel= 1 )]
+        appPermissions=[[psid=[623(26f)], ssp=[opaque=[0132]]]]
+        certIssuePermissions=NONE
+        certRequestPermissions=NONE
+        canRequestRollover=false
+        encryptionKey=[supportedSymmAlg=aes128Ccm, publicKey=[ecdsaNistP256=[compressedy0=84feb9af3437c1b338d3368650a5fdeace1e70d0298fba9fa216e1c2a01598ec]]]
+        verifyKeyIndicator=[verificationKey=[ecdsaNistP256=[compressedy1=ec9036086c97473f956f6f975ff29e483dd641e5167a572118ba4412c80e6085]]]
+      ]
+      signature=[ecdsaNistP256Signature=EcdsaP256[r=[xonly=f3c6785a15958da9d3a54f901ea726f6fb66e0051c866f464839e1cd535a14d9], s=a11b5dfa964b57f2934889aab24de8e4cdc83d7725a7a09a378ae61eeb6cb865]]
+    ]
+  ]
+]
+HOOORAY! Signature is valid! 
+Received: SignedData [
+  hashAlgorithm=sha256,
+  tbsData=[
+    payload=[
+      data=[
+        protocolVersion=3,
+        content=[
+          unsecuredData=[data=4369616f]
+        ]
+      ]
+    ],
+    headerInfo=[
+      psid=[36(24)],
+      generationTime=[timeStamp=Sat Apr 25 15:54:28 CEST 2020 (514907671769000)],
+      inlineP2pcdRequest=[3ffe62,aab08c],
+      requestedCertificate=[
+        version=3
+        type=explicit
+        issuer=[self=sha256]
+        toBeSigned=[
+          id=[name=[testrootca.autostrade.it]]
+          cracaId=[000000]
+          crlSeries=[0]
+          validityPeriod=[start=Time32 [timeStamp=Sat Apr 25 15:54:28 CEST 2020 (514907671)], duration=Duration [45 years]]
+          region=[SequenceOfIdentifiedRegion [[CountryOnly [380]]]]
+          assuranceLevel=NONE
+          appPermissions=[[psid=[622(26e)], ssp=[opaque=[01]]],[psid=[624(270)], ssp=[opaque=[0138]]]]
+          certIssuePermissions=[[subjectPermissions=[all], minChainDepth=3, chainDepthRange=-1, eeType=[app=true, enroll=true]]]
+          certRequestPermissions=NONE
+          canRequestRollover=false
+          encryptionKey=[supportedSymmAlg=aes128Ccm, publicKey=[ecdsaNistP256=[compressedy1=973917f1a23d7060d9106e058cb92a51d7e69e9f1fc5e98c86e521f29b6e58eb]]]
+          verifyKeyIndicator=[verificationKey=[ecdsaNistP256=[compressedy0=1a9b2f8ebb979c3791675dba9e9b84c89a59dd1f53971a016d1ffc55cffc0d0b]]]
+        ]
+        signature=[ecdsaNistP256Signature=EcdsaP256[r=[xonly=7f3e6d92a0b5e5a5d94ecad50b7b038b8467c5def0fd1e94cee7e75ea1570166], s=ce76497c8158cc10e809e274025ce2405ac423007bfb813a1801de595c5877f7]]
+      ]
+    ]
+  ],
+  signer=[certificate=[
+  Certificate [
+    version=3
+    type=explicit
+    issuer=[sha256AndDigest=[d64f55b067752c62]]
+    toBeSigned=[
+      id=[none]
+      cracaId=[000000]
+      crlSeries=[0]
+      validityPeriod=[start=Time32 [timeStamp=Sun Dec 02 12:12:21 CET 2018 (470833944)], duration=Duration [1 years]]
+      region=[SequenceOfIdentifiedRegion [[CountryOnly [380]]]]
+      assuranceLevel=[subjectAssurance=65 (assuranceLevel=2, confidenceLevel= 1 )]
+      appPermissions=[[psid=[623(26f)], ssp=[opaque=[0132]]]]
+      certIssuePermissions=NONE
+      certRequestPermissions=NONE
+      canRequestRollover=false
+      encryptionKey=[supportedSymmAlg=aes128Ccm, publicKey=[ecdsaNistP256=[compressedy0=84feb9af3437c1b338d3368650a5fdeace1e70d0298fba9fa216e1c2a01598ec]]]
+      verifyKeyIndicator=[verificationKey=[ecdsaNistP256=[compressedy1=ec9036086c97473f956f6f975ff29e483dd641e5167a572118ba4412c80e6085]]]
+    ]
+    signature=[ecdsaNistP256Signature=EcdsaP256[r=[xonly=f3c6785a15958da9d3a54f901ea726f6fb66e0051c866f464839e1cd535a14d9], s=a11b5dfa964b57f2934889aab24de8e4cdc83d7725a7a09a378ae61eeb6cb865]]
+  ]]],
+  signature=[ecdsaNistP256Signature=EcdsaP256[r=[xonly=44d40707be8c44e3c819b8cb49a67b35dfde7d8c1b58f926279418b95e66a6e6], s=277fd3f8cf58013c48bf9caa5aa45e8002fa85c4da9fce18a6118704d15f8dbb]]
+]
+Closing everything
